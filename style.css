@@ -1,0 +1,35 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@media screen and (min-width: 768px) {
+    body{
+        display: flex;
+        background-color: blue;
+        color: white;
+    }
+}
+@media screen and (min-width: 410px) and (max-width: 768px) {
+    body{
+        display: flex;
+        flex-wrap: wrap;
+        background-color: green;
+    }
+    #small{
+        width: 66%;
+    }
+    #medium{
+        width: 33%;
+    }
+    #large{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 410px) {
+   body{
+    display: flex;
+    flex-direction: column;
+    background-color: red;
+   }
+}
